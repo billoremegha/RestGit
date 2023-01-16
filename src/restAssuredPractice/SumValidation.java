@@ -12,6 +12,8 @@ public class SumValidation {
 	@Test
 	public void sumOfCourses() 
 	{	int sum= 0;
+		int sum1=1;
+		int sum2=2;
 		JsonPath js = new JsonPath(payload.CoursePrice());
 		
 		int count = js.getInt("courses.size()");
@@ -24,6 +26,8 @@ public class SumValidation {
 			 sum=sum+amount;
 		}
 		System.out.println(sum);
+		System.out.println(sum1);
+		System.out.println(sum2);
 	int purchaseAmount	= js.get("dashboard.purchaseAmount");
 	System.out.println("purchaseAmount");
 	Assert.assertEquals(sum, purchaseAmount);
