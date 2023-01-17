@@ -31,6 +31,11 @@ public class SumValidation {
 			 int amount1= price*copies;
 			 System.out.println(amount);
 			 sum=sum+amount;
+			 int price2 =js.getInt("courses["+i+"].price");
+			 int copies2=js.getInt("courses["+i+"].copies");
+			 int amount2= price*copies;
+			 System.out.println(amount);
+			 sum=sum+amount;
 		}
 		System.out.println(sum);
 		System.out.println(sum1);
