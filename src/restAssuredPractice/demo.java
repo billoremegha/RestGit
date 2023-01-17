@@ -29,7 +29,7 @@ public class demo {
 		JsonPath js = new JsonPath(response);
 		 String placeId= js.getString("place_id");
 		 System.out.println(placeId);
-		 
+		 System.out.println(response);
 		 //Update Place
 		String newaddress = "Summer walk , Africa";
 		 
