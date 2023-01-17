@@ -26,6 +26,11 @@ public class SumValidation {
 			 int amount= price*copies;
 			 System.out.println(amount);
 			 sum=sum+amount;
+			 int price1 =js.getInt("courses["+i+"].price");
+			 int copies1=js.getInt("courses["+i+"].copies");
+			 int amount1= price*copies;
+			 System.out.println(amount);
+			 sum=sum+amount;
 		}
 		System.out.println(sum);
 		System.out.println(sum1);
@@ -37,6 +42,9 @@ public class SumValidation {
 		System.out.println(sum3);
 		System.out.println(sum4);
 	int purchaseAmount	= js.get("dashboard.purchaseAmount");
+	System.out.println("purchaseAmount");
+	Assert.assertEquals(sum, purchaseAmount);
+	int purchaseAmount1	= js.get("dashboard.purchaseAmount");
 	System.out.println("purchaseAmount");
 	Assert.assertEquals(sum, purchaseAmount);
 	} 
